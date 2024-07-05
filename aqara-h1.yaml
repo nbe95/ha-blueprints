@@ -79,7 +79,7 @@ blueprint:
       default: []
       selector:
         action: {}
-  source_url: https://community.home-assistant.io/t/z2m-aqara-h1-wrs-r02-wireless-remote-switch-double-rocker-updated-single-double-single-double-hold/455665
+  source_url: https://raw.githubusercontent.com/nbe95/ha-blueprints/main/aqara-h1.yaml
 mode: single
 max_exceeded: silent
 trigger:
