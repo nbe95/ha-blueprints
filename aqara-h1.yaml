@@ -80,12 +80,11 @@ blueprint:
       selector:
         action: {}
   source_url: https://community.home-assistant.io/t/z2m-aqara-h1-wrs-r02-wireless-remote-switch-double-rocker-updated-single-double-single-double-hold/455665
-mode: restart
+mode: single
 max_exceeded: silent
 trigger:
   - platform: state
     entity_id: !input "button_sensor"
-    attribute: action
 action:
   - variables:
       command: "{{ trigger.to_state.state }}"
